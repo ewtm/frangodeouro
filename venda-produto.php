@@ -7,8 +7,14 @@ $nome = $_POST["nome"];
 $quantidade = $_POST["quantidade"];
 $categoria_id=$_POST["categoria_id"];
 
+ 
+if($categoria_id== 1){
+    $vndTotal = $_POST['vndTotal'];    
+}else{
+    
+}
 
-$vndTotal = $_POST['vndTotal'];
+        
 
 if(insereVenda($conexao, $nome, $quantidade,$vndTotal, $produto_id)){
 ?>
